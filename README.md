@@ -15,36 +15,18 @@ This solenoid winder is able to produce solenoids which are suitable to be used 
  2. Assemble the solenoid spool and solenoid spool supporter to the shaft of the stepper motor.
  3. Connect the Arduino Uno to computer via the Arduino USB port.
  4. Connect the Arduino Motor Shield to a power source via the 12V power cable.
- 5. Place the wire spool and thread the wire through the suitable eye holes * and servo arm onto the solenoid spool.
- * Green eye holes are used for high-tension wire. Red eye holes and wire tensioner are used for low-tension wire.
+ 5. Place the wire spool and thread the wire through the suitable eye holes and servo arm hole onto the solenoid spool.
+ * NOTES: Green eye holes are used for high-tension wire. Red eye holes and wire tensioner are used for low-tension wire.
  
 # Calibration
- 1. Connect to computer and long press the pushbutton to initiate and reset the map in EEPROM.
- 2. Place arduino car near a boundary. 
- 3. Switch on the Arduino board and the motors. 
- 4. Long press the pushbutton to begin mapping.
- 5. Press pushbutton when arduino car is moving in a straight line after mapping is completed.
- 6. Connect to computer to obtain map via EEPROM.
- 
- Below is a video of the robot in action.
- 
+ 1. Measure and change the diameter of the wire in the Arduino Sketch.
+ 2. Adjust the number of revolutions required on the Solenoid Spool in the Arduino Sketch.
+ 3. Adjust the initial direction of the servo motor as needed in the Arduino Sketch.
+ 4. Open Serial Monitor.
+ 5. Type in the initial position (in degrees) of the servo motor so the servo arm hole align with the end of the solenoid spool.
+ 6. Type in the final position (in degrees) of the servo motor so the servo arm hole align with another end of the solenoid spool.
+ 7. Type in the start position (in degrees) of the servo motor. Typically, start position is the same as the final position.
+ 8. Number of revolutions spun, number of revolutions remaining and position of the servo (degrees) will be shown in the Serial Monitor.
+ * NOTES: Press the reset button on the Arduino Uno to stop and reset the operation.
  
 # Results
- '0' indicates free space while '1' indicates boundaries.
- 
-
-# Mechanism
-## Moving
- This robot is following the boundaries using left-hand rule.
- - Is obstacle in front?
-   - Yes: Turn right
-   - No: Proceed checking
- - Is there free space at the left?
-   - Yes: Turn left
-   - No: Move forward at a distance from the boundaries at the left
-
-## Mapping
- - Look up the direction the robot is facing via dead reckoning (North, South, East, West)
-   - If robot turn left: change internal direction towards left (i.e. North to West) 
-   - If robot turn right: change internal direction towards right (i.e. North to East)
-   - If robot move forward: change '0' to '1' in previous position
