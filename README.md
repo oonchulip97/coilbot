@@ -27,11 +27,12 @@ This solenoid winder is able to produce solenoids which are suitable to be used 
  1. Measure and change the diameter of the wire in the Arduino Sketch.
  2. Adjust the number of revolutions required on the Solenoid Spool in the Arduino Sketch.
  3. Adjust the initial direction of the servo motor as needed in the Arduino Sketch.
- 4. Open Serial Monitor.
- 5. Type in the initial position (in degrees) of the servo motor so the servo arm hole align with the end of the solenoid spool.
- 6. Type in the final position (in degrees) of the servo motor so the servo arm hole align with another end of the solenoid spool.
- 7. Type in the start position (in degrees) of the servo motor. Typically, start position is the same as the final position.
- 8. Number of revolutions spun, number of revolutions remaining and position of the servo (degrees) will be shown in the Serial Monitor.
+ 4. Upload the Arduino Sketch onto the Arduino Uno.
+ 5. Open Serial Monitor.
+ 6. Type in the initial position (in degrees) of the servo motor so the servo arm hole align with the end of the solenoid spool.
+ 7. Type in the final position (in degrees) of the servo motor so the servo arm hole align with another end of the solenoid spool.
+ 8. Type in the start position (in degrees) of the servo motor. Typically, start position is the same as the final position.
+ 9. Number of revolutions spun, number of revolutions remaining and position of the servo (degrees) will be shown in the Serial Monitor.
  * NOTES: Press the reset button on the Arduino Uno to stop and reset the operation.
  
 # Results
