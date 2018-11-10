@@ -10,6 +10,9 @@ This solenoid winder is able to produce solenoids which are suitable to be used 
 ## Software
  - Arduino IDE (tested using version 1.8.5)
  
+## Photos
+ <img src=""  width="480">
+ 
 # Setup
  1. Design and manufacture solenoid spool supporter to connect the solenoid spool to the shaft of the stepper motor.
  2. Assemble the solenoid spool and solenoid spool supporter to the shaft of the stepper motor.
