@@ -35,4 +35,4 @@ This solenoid winder is able to produce solenoids which are suitable to be used 
  9. Number of revolutions spun, number of revolutions remaining and position of the servo (degrees) will be shown in the Serial Monitor.
  * NOTES: Press the reset button on the Arduino Uno to stop and reset the operation.
  
-# Results
+[![Coilbot In Action](http://img.youtube.com/vi/lM6HLl1aofY/0.jpg)](http://www.youtube.com/watch?v=lM6HLl1aofY "Coilbot In Action")
